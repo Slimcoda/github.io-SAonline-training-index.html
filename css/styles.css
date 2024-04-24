@@ -278,7 +278,18 @@ details p{
     font-size:14px;
 }
 
-
+.cert-icon img{
+    width: 70px;
+    height:90px;
+    padding-top:25px;
+    padding-left:25px;
+}
+.cert-icon img{
+    width: 100px;
+    height:100px;
+    padding-top:15px;
+    padding-left:25px;
+}
 /* ============================================================ */
 /* Module 1 CSS styles */
 /* ============================================================ */
