@@ -1,0 +1,519 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: color-mix(in hsl shorter hue, color percentage, color percentage);
+    
+}
+
+/* NAvigation Bar */
+nav{
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+nav.navbar.navbar-expand-lg{
+    background-color: #001772 ;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 0;
+    height: 1.5;
+    padding: 10px;
+}
+
+a.navbar-brand{
+    padding-left: 0;
+}
+
+a.navbar-brand h3{
+    color:#fcd5a2;
+    font-weight:light;
+    font-style: italic;
+}
+
+a.nav-link{
+    color:rgb(255, 255, 255);
+    padding-top: .1cm;
+    padding-bottom: .1cm;
+    font-size:19px;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse{
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #f38a00;
+}
+
+a.nav-link.dropdown-toggle{
+    background-color: #001772;
+    color: #ffffff;
+    
+}
+
+a.nav-link.dropdown-toggle:hover{
+    color:#f38a00;
+}
+ul.dropdown-menu.show{
+    background: #001772;
+    text-align: left;
+    width: 100%;
+    height: 170px;
+}
+
+a.nav-link.dropdown-toggle.show{
+    color: #FFF;
+    padding-bottom: 0;
+    padding-left:15px;
+}
+
+a.dropdown-item{
+    padding-left: 15px;
+    text-align: left;
+}
+
+img.brand-image{
+    padding-right:15px;
+    padding-left:15px;
+    width:120px;
+    height: 65px;
+    border-radius: 25px;
+}
+
+input.form-control{
+    width:350px;
+    font-size:14px;
+}
+
+/* Footer */
+
+div.copyright{
+    color: #ffffff;
+}
+
+div a.home-link{
+    color: #ffffff;
+}
+/* Main Content starts here */
+div.my-hero{
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    background-image: url('../images/A2.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding-top: 35px;
+    margin-top:2cm;
+}
+
+.my-hero h1{
+   
+    position: absolute;
+    color: #fff;
+    z-index: 1;
+    display: flex;
+    font-weight: bolder;
+    font-size: 6rem;
+    line-height: .8;
+    text-align: center;
+    margin-top:-180px;
+}
+
+.my-hero p {
+    position: absolute;
+    font-size: 32px;
+    margin-top: 130px;
+    z-index: 1;
+    color: #f3067c;
+    display: flex;
+    
+    font-style: italic;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    margin-top: 240px;
+}
+
+div.my-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 14, 45, 0.427); /* Black overlay with 50% opacity */
+    z-index: 0; /* Ensure the overlay is above the image */
+}
+
+div.about-us-container{
+    background: #d2d2d245;
+    width: 100%;
+}
+h3 span{
+    color: #007bff;
+    font-size: 48px;
+}
+
+p.detail-about{
+    font-size: 22px;
+}
+
+a.link-to-course{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Bootstrap icon for link to course */
+i.bi.bi-arrow-right-circle-fill{
+    font-size: 32px;
+    color: #007bff;
+    padding-top:10px;
+}
+
+.bi.bi-award-fill{
+    font-size:80px;
+    padding-right:10px;
+    color: #007bff;
+}
+
+div#weekly-container{
+    /* background-color:#f8b45c; */
+    margin-top:10px;
+}
+
+div.weekly-column{
+    margin: 0;
+    padding-top: 20px;
+    height: auto;
+}
+
+.weekly-intro{
+    color:#000000;
+}
+
+video.week1-video{
+    margin: 0;
+    padding-top: 5px;
+    width:100%; 
+    height:300px;
+}
+
+video.week2-video{
+    margin: 0;
+    margin-top: 35px; 
+    width:100%; 
+    height:300px;
+}
+
+div.card{
+    height: auto;
+    background: #d2d2d245;
+    border-radius: 15px;
+}
+div.card-body{
+    padding-top: 0;
+    padding-bottom:0;
+}
+div.card:hover{
+    transform: scale(1.05); /* Slightly enlarge the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.card-title{
+    font-size: 19px;
+}
+
+p.card-text{
+    font-size: 14px;
+    line-height: 1.4;
+    overflow: hidden;
+}
+
+summary{
+    font-size:14px;
+}
+details p{
+    font-size:14px;
+}
+
+
+/* ============================================================ */
+/* Module 1 CSS styles */
+/* ============================================================ */
+div.about-us-container-2{
+    margin-top:3cm;
+    margin-bottom: 3cm;
+    background: #57576f45;
+    width: 100%;
+    padding:10px;
+    text-align: center;
+}
+
+/* ============================================================ */
+/* End of Module 1 CSS styles */
+/* ===================================================== */
+
+
+/* Media Queries */
+@media (min-width: 768px)  {
+    .my-hero h1 {
+        
+        margin-top: -150px;
+        position: absolute;
+        color: #fff;
+        z-index: 1;
+        display: flex;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .my-hero p {
+        position: absolute;
+        
+       
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+    }
+  } 
+
+    @media (min-width: 469px) and (max-width: 767px) {
+    .my-hero h1 {
+        font-size: 4rem;
+        margin-top: -150px;
+        position: absolute;
+        color: #fff;
+        z-index: 1;
+        display: flex;
+        text-align: center;
+        line-height: 1.3;
+    }
+    .my-hero p {
+        position: absolute;
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        margin-top:120px;
+        padding-left:35px;
+        padding-right: 35px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        margin-top: 280px;
+    }
+    ul.dropdown-menu.show{
+        background: #2b0e01;
+        color: #FFF;
+        padding-left: 0;
+        width: 100%;
+    }
+    .bi.bi-award-fill{
+        font-size:60px;
+        padding-right:10px;
+        color: #007bff;
+    }
+}
+
+@media (max-width: 468px) {
+    button.navbar-toggler.collapsed{
+        padding-right: 45px;
+    }
+    div.my-hero{
+        position: relative;
+        width: 100%;
+        height: 65vh;
+        background-image: url('../images/A2.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        padding-top: 35px;
+    }
+    
+    
+    
+    .my-hero p {
+        position: absolute;
+        font-size: 24px;
+        margin-top: 100px;
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        margin-top: 280px;
+    }
+  }
+
+@media (max-width: 467px) {
+    a.navbar-brand h3{
+        color:#fcd5a2;
+        font-weight:light;
+        font-style: italic;
+        font-size: 19px;
+    }
+
+    img.brand-image{
+        padding-right:15px;
+        width:60px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    button.navbar-toggler.collapsed{
+        padding-right: 35px;
+    }
+
+   a.navbar-brand{
+        padding-left: 5px;
+    }
+
+    div.my-hero{
+        width: 100%;
+        height: 45vh;
+        padding-left:0;
+        padding-right:0;
+        margin:0;
+    }
+    input.form-control{
+        width:100%;
+        font-size:12px;
+    }
+    ul.dropdown-menu.show{
+        background: #2b0e01;
+        color: #FFF;
+        padding-left: 0;
+        width: 100%;
+    }
+    /* About Us */
+    h1.about-us{
+        font-size: 19px;
+        padding: 0;
+        margin:0;
+    }
+    p.detail-about{
+        font-size: 16px;
+    }
+    .my-hero h1 {
+        font-size: 19px;
+        margin-top: -10px;
+        position: absolute;
+        color: #fff;
+        z-index: 1;
+        display: flex;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .my-hero p {
+        position: absolute;
+        font-size: 16px;
+        margin-top: 70px;
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .btn-primary {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        margin-top: 180px;
+    }
+
+    h3 span{
+        color: #007bff;
+        font-size: 22px;
+    }
+    video{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.about-us-container-2{
+        margin-top:1.38cm;
+        background: #57576f45;
+        width: 100%;
+    }
+    .bi.bi-award-fill{
+        font-size:40px;
+        padding-right:10px;
+        color: #007bff;
+    }
+}
