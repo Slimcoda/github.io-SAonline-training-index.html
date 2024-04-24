@@ -511,9 +511,8 @@ div.about-us-container-2{
         background: #57576f45;
         width: 100%;
     }
-    .bi.bi-award-fill{
-        font-size:22px;
-        padding-right:10px;
-        color: #007bff;
+    .cert-icon img{
+        width:45px;
+        height:45px;
     }
 }
