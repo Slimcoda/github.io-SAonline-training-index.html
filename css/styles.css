@@ -514,5 +514,6 @@ div.about-us-container-2{
     .cert-icon img{
         width:45px;
         height:45px;
+        padding-left:15px;
     }
 }
