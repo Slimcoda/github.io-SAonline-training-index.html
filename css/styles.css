@@ -1,0 +1,570 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: color-mix(in hsl shorter hue, color percentage, color percentage);
+    background-color: lightblue;
+    
+    
+    
+}
+
+/* NAvigation Bar */
+nav{
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+nav.navbar.navbar-expand-lg{
+    background-color: #001772 ;
+    width: 100%;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 0;
+    height: 1.5;
+    padding: 10px;
+}
+
+a.navbar-brand{
+    padding-left: 0;
+}
+
+a.navbar-brand h3{
+    color:#ffffff;
+    font-weight:light;
+    font-style: italic;
+}
+
+a.nav-link{
+    color:rgb(255, 255, 255);
+    padding-top: .1cm;
+    padding-bottom: .1cm;
+    font-size:19px;
+}
+
+div#navbarSupportedContent.collapse.navbar-collapse{
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  color: #fff;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #f38a00;
+}
+
+a.nav-link.dropdown-toggle{
+    background-color: #001772;
+    color: #ffffff;
+    
+}
+
+a.nav-link.dropdown-toggle:hover{
+    color:#f38a00;
+}
+ul.dropdown-menu.show{
+    background: #001772;
+    text-align: left;
+    width: 100%;
+    height: 170px;
+}
+
+a.nav-link.dropdown-toggle.show{
+    color: #FFF;
+    padding-bottom: 0;
+    padding-left:15px;
+}
+
+a.dropdown-item{
+    padding-left: 15px;
+    text-align: left;
+}
+
+img.brand-image{
+    padding-right:15px;
+    padding-left:15px;
+    width:120px;
+    height: 65px;
+    border-radius: 25px;
+}
+
+input.form-control{
+    width:350px;
+    font-size:14px;
+}
+
+/* Footer */
+
+div.copyright{
+    color: #ffffff;
+}
+
+div a.home-link{
+    color: #ffffff;
+}
+/* Main Content starts here */
+
+div.my-hero{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url('../images/Online-Learning.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    padding-top: 35px;
+    margin-top:2cm;
+}
+
+div.my-hero h1{
+    padding:0;
+    position: absolute;
+    color: #f3b817;
+    z-index: 1;
+    display: flex;
+    font-weight: bolder;
+    font-size: 5rem;
+    line-height: .8;
+    text-align: center;
+    margin-top:-220px;
+}
+
+div.my-hero p {
+    position: absolute;
+    font-size: 32px;
+    margin-top: -40px;
+    z-index: 1;
+    color:#fff;
+    display: flex;
+    font-style: italic;
+}
+
+
+div.my-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 24, 87, 0.842); /* Black overlay with 50% opacity */
+    z-index: 0; /* Ensure the overlay is above the image */
+}
+
+button.top-hero {
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    margin-top: 110px;
+    width: 250px;
+}
+
+div.about-us-container{
+    background: #fff;
+    width: 100%;
+}
+
+p.detail-about{
+    font-size: 18px;
+}
+h3 span{
+    color: #007bff;
+    font-size: 48px;
+}
+
+p.card-text.for-about{
+    font-size: 22px;
+    padding-top:10px;
+}
+
+h3.card-title.for-about{
+    font-size:32px;
+}
+
+a.link-to-course{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Bootstrap icon for link to course */
+i.bi.bi-arrow-right-circle-fill{
+    font-size: 32px;
+    color: #007bff;
+    padding-top:10px;
+}
+
+.bi.bi-award-fill{
+    font-size:80px;
+    padding-right:10px;
+    color: #007bff;
+}
+
+div#weekly-container{
+    /* background-color:#f8b45c; */
+    margin-top:10px;
+}
+
+div.weekly-column{
+    margin: 0;
+    padding-top: 20px;
+    height: auto;
+}
+
+.weekly-intro{
+    color:#000000;
+}
+
+video.week1-video{
+    margin: 0;
+    padding-top: 5px;
+    width:100%; 
+    height:300px;
+}
+
+video.week2-video{
+    margin: 0;
+    margin-top: 35px; 
+    width:100%; 
+    height:300px;
+}
+
+div.card{
+    height: auto;
+    background: #d2d2d245;
+    border-radius: 15px;
+}
+div.card-body{
+    padding-top: 0;
+    padding-bottom:0;
+}
+div.card:hover{
+    transform: scale(1.02); /* Slightly enlarge the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.card-title{
+    font-size: 16px;
+    margin-top:0;
+}
+
+p.card-text{
+    font-size: 13px;
+    line-height: 1.4;
+    overflow: hidden;
+    padding:0;
+}
+
+summary{
+    font-size:13px;
+    margin-top:0;
+}
+details p{
+    font-size:12px;
+    padding:0;
+    
+}
+
+.cert-icon img{
+    width: 230px;
+    height:250px;
+    padding-top:15px;
+    padding-left:25px;
+}
+
+p small{
+    color:#4da000;
+    font-style: italic;
+    font-size:10px;
+}
+
+
+
+/* ============================================================ */
+/* Module 1 CSS styles */
+/* ============================================================ */
+div.about-us-container-2{
+    margin-top:3cm;
+    margin-bottom: 3cm;
+    background: #57576f45;
+    width: 100%;
+    padding:10px;
+    text-align: center;
+}
+
+/* ============================================================ */
+/* End of Module 1 CSS styles */
+/* ===================================================== */
+
+
+/* Media Queries */
+@media (min-width: 768px)  and (max-width:992px){
+    div.my-hero h1{
+        font-size: 42px;
+        margin-top: -220px;
+        color:#f3b817;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        text-align: center;
+        padding-left: 15px;
+        line-height: 1.4;
+    }
+    .my-hero p {
+        position: absolute;
+        
+       
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+    }
+    .cert-icon img{
+        width:200px;
+        height:200px;
+    }
+  } 
+
+    @media (min-width: 469px) and (max-width: 767px) {
+        div.my-hero h1{
+            font-size: 42px;
+            margin-top: -220px;
+            color:#f3b817;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            text-align: center;
+            padding-left: 15px;
+            line-height: 1.4;
+        }
+ 
+        div.my-hero p {
+            position: absolute;
+            font-size: 26px;
+            margin-top: -40px;
+            z-index: 1;
+            color: #fff;
+            display: flex;
+            font-weight: bold;
+            text-align: center;
+            padding-left: 15px;
+        }
+
+        .cert-icon img{
+            width:180px;
+            height:180px;
+        }
+
+    ul.dropdown-menu.show{
+        background: #2b0e01;
+        color: #FFF;
+        padding-left: 0;
+        width: 100%;
+    }
+    .bi.bi-award-fill{
+        font-size:60px;
+        padding-right:10px;
+        color: #007bff;
+    }
+}
+
+@media (max-width: 468px) {
+    button.navbar-toggler.collapsed{
+        padding-right: 45px;
+    }
+    div.my-hero h1{
+        font-size: 38px;
+        margin-top: -70px;
+        color:#f3b817;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        text-align: center;
+        padding-left: 15px;
+        line-height: 1.4;
+    }
+    
+    div.my-hero p {
+        position: absolute;
+        font-size: 22px;
+        margin-top: 80px;
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    .cert-icon img{
+        width:150px;
+        height:150px;
+    }
+  }
+
+@media (max-width: 467px) {
+    a.navbar-brand h3{
+        color:#fcd5a2;
+        font-weight:light;
+        font-style: italic;
+        font-size: 19px;
+    }
+
+    img.brand-image{
+        padding-right:15px;
+        width:60px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    button.navbar-toggler.collapsed{
+        padding-right: 35px;
+    }
+
+   a.navbar-brand{
+        padding-left: 5px;
+    }
+
+    div.my-hero{
+        width: 100%;
+        height: 45vh;
+        padding-left:0;
+        padding-right:0;
+        margin:0;
+    }
+    input.form-control{
+        width:100%;
+        font-size:12px;
+    }
+    ul.dropdown-menu.show{
+        background: #2b0e01;
+        color: #FFF;
+        padding-left: 0;
+        width: 100%;
+    }
+    /* About Us */
+    h1.about-us{
+        font-size: 19px;
+        padding: 0;
+        margin:0;
+    }
+    p.detail-about{
+        font-size: 16px;
+    }
+    div.my-hero h1 {
+        font-size: 28px;
+        margin-top: -70px;
+        color:#f3b817;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        text-align: center;
+        padding-left: 15px;
+        line-height: 1.4;
+    }
+    div.my-hero p {
+        position: absolute;
+        font-size: 16px;
+        margin-top: 60px;
+        z-index: 1;
+        color: #fff;
+        display: flex;
+        font-weight: bold;
+        text-align: center;
+        padding-left: 15px;
+    }
+    button.top-hero {
+        color: #ffffff;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: .7rem;
+        cursor: pointer;
+        z-index: 1;
+        position: absolute;
+        display: block;
+        margin-top: 180px;
+        width:30%;
+        text-align: center;
+    }
+
+    h3 span{
+        color: #007bff;
+        font-size: 22px;
+    }
+
+    .cert-icon img{
+        width: 230px;
+        height:250px;
+        padding-top:15px;
+        padding-left:25px;
+    }
+
+    video{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.about-us-container-2{
+        margin-top:1.38cm;
+        background: #57576f45;
+        width: 100%;
+    }
+    p.detail-about{
+        font-size: 14px;
+    }
+    .bi.bi-award-fill{
+        font-size:40px;
+        padding-right:10px;
+        color: #007bff;
+    }
+    .cert-icon img{
+        width:100px;
+        height:100px;
+    }
+
+    div.card{
+        height: auto;
+        background: #e6f8f5fa;
+        border-radius: 15px;
+        padding-top: 5px;;
+    }
+    div.col{
+        padding-top:5px;
+        margin-top:0;
+    }
+
+    video.week1-video{
+       padding-bottom: 25px;
+    }
+}
